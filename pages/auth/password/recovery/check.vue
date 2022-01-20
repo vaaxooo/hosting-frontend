@@ -38,7 +38,7 @@
 <script>
     export default {
         name: "check",
-        layout: "auth",
+        layout: "account/auth",
         auth: 'guest',
         data() {
             return {

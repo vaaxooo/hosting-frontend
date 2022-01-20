@@ -12,6 +12,7 @@
 <script>
     export default {
         name: "success",
+        layout: "account/default",
         data() {
             return {
                 payment_id: this.$route.query.session_id || 'отсутствует!'

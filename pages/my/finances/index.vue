@@ -72,6 +72,7 @@
 <script>
     export default {
         name: "finances",
+        layout: "account/default",
         data() {
             return {
                 amount: 100,

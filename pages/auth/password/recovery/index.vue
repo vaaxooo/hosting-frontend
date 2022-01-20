@@ -31,7 +31,7 @@
 <script>
     export default {
         name: "index",
-        layout: "auth",
+        layout: "account/auth",
         auth: 'guest',
         data() {
             return {

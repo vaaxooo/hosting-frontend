@@ -149,6 +149,7 @@
 <script>
     export default {
         name: "identification",
+        layout: "account/default",
         data() {
             return {
                 identification: {

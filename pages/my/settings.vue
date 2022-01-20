@@ -139,6 +139,7 @@
 <script>
     export default {
         name: "settings",
+        layout: "account/default",
         data() {
             return {
                 current_password: '',

@@ -63,7 +63,7 @@
 <script>
     export default {
         name: "register",
-        layout: "auth",
+        layout: "account/auth",
         auth: 'guest',
         data() {
             return {
