@@ -2,7 +2,7 @@
     <div class="navbar navbar-expand-lg menu-white sticky-top">
 
         <NuxtLink class="navbar-brand" to="/">
-            Hosting <b>VPS</b>
+            <b>Project</b>
         </NuxtLink>
         <div class="d-flex align-items-center">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse"
@@ -14,16 +14,9 @@
             <ul class="navbar-nav d-lg-block">
 
                 <li class="nav-item">
-                    <NuxtLink class="nav-link" to="/my/hosting/">
+                    <NuxtLink class="nav-link" to="/my/announcement/">
                         <i class="fas fa-fw fa-server"></i>
-                        Заказы
-                    </NuxtLink>
-                </li>
-
-                <li class="nav-item">
-                    <NuxtLink class="nav-link" to="/my/tickets/">
-                        <i class="fas fa-fw fa-comments"></i>
-                        Тикеты
+                        Объявления
                     </NuxtLink>
                 </li>
 

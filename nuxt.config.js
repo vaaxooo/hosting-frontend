@@ -4,7 +4,7 @@ export default {
 
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        title: 'hosting-vps',
+        title: 'Project',
         htmlAttrs: {
             lang: 'en'
         },
@@ -50,7 +50,7 @@ export default {
     ],
 
     axios: {
-        baseURL: 'http://hosting.ngateway.xyz', // BACKEND URL
+        baseURL: 'http://127.0.0.1:3001', // BACKEND URL
     },
 
     auth: {

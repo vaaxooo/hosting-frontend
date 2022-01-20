@@ -1,6 +1,6 @@
 <template>
     <div class="col-xl-5 col-lg-6 col-md-7 block">
-        <h1 class="h2">Hosting <b>VPS</b></h1>
+        <h1 class="h2"><b>Project</b></h1>
         <p class="lead">Восстановление пароля</p>
         <div class="form-group" v-if="message">
             <span class="alert alert-danger">{{ message }}</span>
