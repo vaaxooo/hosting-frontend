@@ -154,13 +154,13 @@ sup {
 }
 
 a {
-    color: #007bff;
+    color: #a9a9a9;
     text-decoration: none;
     background-color: transparent;
 }
 
 a:hover {
-    color: #0056b3;
+    color: #565656;
     text-decoration: none;
 }
 
@@ -13714,27 +13714,33 @@ a.nav-link img {
 a.nav-link:hover {
     color: #222222;
 }
-
+@import url('http://fonts.cdnfonts.com/css/uni-neue');
+@import url('http://fonts.cdnfonts.com/css/proxima-nova-2');
 body {
     font-size: 1em;
     line-height: 1.85714286em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
-    color: #666666;
+    font-family: 'Proxima Nova', sans-serif;
+    color: #0b0819;
     font-weight: 400;
-    background: #fff;
+    background: #f6f6f6;
 }
 
 .btn.btn-primary {
-    background: #4a90e2;
-    border-color: #4a90e2;
-    color: #fff;
+    background: #ffcf0e;
+    border-color: #ffcf0e;
+    color: #0b0819;
     height: 100%;
+    font-weight: 500;
 }
 
-.btn.btn-primary:hover {
-    background: #609de6;
+.btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {
+    color: #0b0819!important;
+    background-color: #f4c60e!important;
+    border-color: #f4c60e!important;
+    outline: 0!important;
+    box-shadow: 0 0 0 black!important;
 }
 
 .btn {
@@ -13903,14 +13909,14 @@ input.form-control.input-search {
 .identification {
     margin: 20px 0;
     padding: 30px 20px;
-    background: #4a90e221;
-    color: #607d8b;
+    background: #f8f9fa;
+    color: #343a40;
     font-size: 18px;
     border-radius: 4px;
 }
 
 h5.identification-title {
-    color: #607d8b;
+    color: #343a40;
     font-size: 20px;
     font-weight: 600;
 }
@@ -14104,10 +14110,10 @@ li.nav-item:hover {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    background: #fff;
+    background: #fafafa;
     border-radius: 3px;
-    -wekbit-box-shadow: 0 0 0 2px #f0f0f0 inset;
-    box-shadow: inset 0 0 0 2px #f0f0f0;
+    -wekbit-box-shadow: 0 0 0 2px #fafafa inset;
+    box-shadow: inset 0 0 0 2px #fafafa;
     transition: all .1s linear;
     animation-fill-mode: both;
     animation-duration: .75s;
@@ -14130,10 +14136,15 @@ li.nav-item:hover {
     border-radius: 0;
 }
 
+.input:focus, .input:hover {
+    background-color: #f6f6f6;
+    border: 0;
+}
+
 .input label input:focus + span, .input label input:not([value=""]) + span {
     font-size: 14px;
     opacity: 1;
-    top: 5px;
+    top: 0;
     transform: translate(0);
     color: #47474794;
 }
@@ -14165,19 +14176,19 @@ input:focus {
     border: 0;
 }
 
-.col-xl-5.col-lg-6.col-md-7.block {
+.block {
     background: #fff;
     padding: 50px;
     border: 1px solid #eeeeee;
     border-color: #edf2f9;
-    box-shadow: 0 0.75rem 1.5rem rgb(18 38 63 / 3%);
+    box-shadow: 0 6px 19px rgb(191 191 191 / 12%);
 }
 
 .fullscreen {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: #fcfcfc;
+    background: #f6f6f6;
 }
 
 .input.is-invalid {
@@ -14242,4 +14253,21 @@ input:focus {
         margin-top: 20px;
         border: 0;
     }
+}
+
+
+input {
+    display: block;
+    width: 100%;
+    height: 46px;
+    padding: 18px;
+    padding-right: 30px;
+    font-size: 16px;
+    background-color: #fafafa;
+    border: 1px solid #fafafa;
+    border-radius: 5px;
+    outline: 0;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }

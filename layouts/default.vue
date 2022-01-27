@@ -1,10 +1,10 @@
 <template>
-    <div class="container layout layout-nav-side">
+    <div class=" layout layout-nav-side">
         <LayoutMenu/>
 
         <div class="main-container">
             <LayoutHeader/>
-            <div class="content">
+            <div class="container content">
                 <Nuxt/>
             </div>
         </div>

@@ -13,12 +13,6 @@
         <div class="collapse navbar-collapse flex-column" id="navbar-collapse">
             <ul class="navbar-nav d-lg-block">
 
-                <li class="nav-item">
-                    <NuxtLink class="nav-link" to="/my/announcement/">
-                        <i class="fas fa-fw fa-server"></i>
-                        Объявления
-                    </NuxtLink>
-                </li>
 
                 <li class="nav-item">
                     <NuxtLink class="nav-link" to="/my/finances/">

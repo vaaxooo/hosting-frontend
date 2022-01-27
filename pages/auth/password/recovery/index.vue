@@ -10,20 +10,24 @@
                 <div class="js-fields-area">
                     <div class="input" :class="{'is-invalid': errors.email}">
                         <label>
-                            <input type="email" v-model="email"  />
+                            <input type="email" v-model="email"/>
                             <span>E-mail</span>
                         </label>
                     </div>
                 </div>
                 <small class="text-danger" v-if="errors.email">{{ errors.email[0] }}</small>
-                <small class="text-muted d-block">Код восстановления доступа будет выслан на указанную почту.</small>
+                <span class="text-muted d-block">Код восстановления доступа будет выслан на указанную почту.</span>
             </div>
-            <button class="btn btn-lg btn-block btn-primary" role="button" type="submit">
-                Отправить код
-            </button>
-            <small>Вспомнили пароль?
-                <NuxtLink to="/auth/login">Вход</NuxtLink>
-            </small>
+            <div class="form-group">
+                <button class="btn btn-lg btn-block btn-primary" role="button" type="submit">
+                    Отправить код
+                </button>
+            </div>
+            <div class="form-group">
+                <span>Вспомнили пароль?
+                    <NuxtLink to="/auth/login">Вход</NuxtLink>
+                </span>
+            </div>
         </form>
     </div>
 </template>

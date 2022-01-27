@@ -31,8 +31,7 @@ export default {
     css: [
         '~/static/assets/css/css.css',
         '~/static/assets/css/icon.css',
-        '~/static/assets/css/theme.css',
-        '~/static/assets/css/web.css'
+        '~/static/assets/css/theme.css'
     ],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

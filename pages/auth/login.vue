@@ -29,16 +29,16 @@
                     </div>
                     <small class="text-danger" v-if="errors.password">{{ errors.password[0] }}</small>
                     <div class="text-right">
-                        <small>
+                        <span>
                             <NuxtLink to="/auth/password/recovery">Забыли пароль?</NuxtLink>
-                        </small>
+                        </span>
                     </div>
                 </div>
                 <button class="btn btn-lg btn-block btn-primary" role="button" type="submit" :class="{'loading': loading}">
                     Войти
                 </button>
-                <small>У вас еще нет учетной записи? <NuxtLink to="/auth/register">Создать</NuxtLink>
-                </small>
+                <span>У вас еще нет учетной записи? <NuxtLink to="/auth/register">Создать</NuxtLink>
+                </span>
             </form>
     </div>
 </template>

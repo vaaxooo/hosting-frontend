@@ -50,12 +50,16 @@
                 </div>
                 <small class="text-danger" v-if="errors.repeat_password">{{ errors.repeat_password[0] }}</small>
             </div>
+            <div class="form-group">
             <button class="btn btn-lg btn-block btn-primary" role="button" type="submit" :class="{'loading': loading}">
                 Зарегистрироваться
             </button>
-            <small>Уже имеете учетную запись?
+            </div>
+            <div class="form-group">
+                <span>Уже имеете учетную запись?
                 <NuxtLink to="/auth/login">Вход</NuxtLink>
-            </small>
+            </span>
+            </div>
         </form>
     </div>
 </template>

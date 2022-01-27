@@ -52,16 +52,16 @@
             <hr>
             <h5 class="mb-0 title">E-mail и пароль</h5>
             <div class="col-12 col-md-6 pl-0 mt-3">
-                <div class="row align-items-center">
+                <div class="row align-items-center py-2">
                     <div class="col-sm-3"><label class="mb-0">E-mail</label></div>
                     <div class="col-sm-9">
                         vaaxooo@gmail.com
                     </div>
                 </div>
-                <div class="row align-items-center">
+                <div class="row align-items-center py-2">
                     <div class="col-sm-3"><label class="mb-0">Пароль</label></div>
                     <div class="col-sm-9">
-                        <button type="button" class="btn pl-0 btn-link" @click="modal = true">
+                        <button type="button" class="btn btn-primary" @click="modal = true">
                             изменить пароль
                         </button>
                     </div>
