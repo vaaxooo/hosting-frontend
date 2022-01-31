@@ -15,14 +15,14 @@
 
 
                 <li class="nav-item">
-                    <NuxtLink class="nav-link" to="/my/finances/">
+                    <NuxtLink class="nav-link" to="/account/my/finances/">
                         <i class="fas fa-fw fa-credit-card"></i>
                         Финансы
                     </NuxtLink>
                 </li>
 
                 <li class="nav-item">
-                    <NuxtLink class="nav-link" to="/my/settings/">
+                    <NuxtLink class="nav-link" to="/account/my/settings/">
                         <i class="fas fa-fw fa-cogs"></i>
                         Настройки
                     </NuxtLink>
@@ -33,7 +33,7 @@
             <div class="d-none d-lg-block w-100">
                 <ul class="nav nav-small flex-column mt-2">
                     <li class="nav-item" v-if="!this.$auth.user.verified">
-                        <NuxtLink to="/my/identification" class="nav-link">Идентификация</NuxtLink>
+                        <NuxtLink to="/account/my/identification" class="nav-link">Идентификация</NuxtLink>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Партнерам</a>

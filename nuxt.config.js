@@ -23,16 +23,16 @@ export default {
             {
                 rel: 'stylesheet',
                 href: 'https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap'
+            },
+            {
+                rel: 'stylesheet',
+                href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
             }
         ]
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
-    css: [
-        '~/static/assets/css/css.css',
-        '~/static/assets/css/icon.css',
-        '~/static/assets/css/theme.css'
-    ],
+    css: [],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: [],

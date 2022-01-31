@@ -47,6 +47,9 @@
                                 <img src="/assets/img/payments/bitcoin.svg" width="155px"/>
                             </div>
                         </div>
+
+
+
                         <div class="form-group">
                             <button type="submit" class="btn btn-block btn-primary btn-lg"
                                     v-if="payment_method && amount > 99 && amount < 15001">Оплатить {{ amount }}.00
