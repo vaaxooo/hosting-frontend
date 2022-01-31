@@ -71,10 +71,10 @@ body {
 }
 
 .vacancy-block:hover {
-    cursor: pointer;
     background: #f8f9fa;
-    border-left: 1px solid #2196f3;
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    border: 1px solid #abb2ba;
+    cursor: pointer;
+    z-index: 11;
 }
 
 .vacancy-info {

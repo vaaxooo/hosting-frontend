@@ -38,8 +38,8 @@
 </template>
 
 <script>
-    require('~/static/assets/landing/css/template.css')
-    require('~/static/assets/landing/css/work.css')
+    import '~/static/assets/landing/css/template.css'
+    import '~/static/assets/landing/css/work.css'
 
     export default {
         name: "default"

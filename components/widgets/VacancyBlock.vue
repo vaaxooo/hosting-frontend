@@ -1,5 +1,5 @@
 <template>
-    <div class="vacancy-block">
+    <div class="vacancy-block" @click="redirect(+data.id)">
         <div class="vacancy-title">
             {{ data.name }}
             <span class="material-icons hot-icon text-danger" title="Гарячая вакансия" v-if="data.hot">local_fire_department</span>
@@ -44,7 +44,7 @@
             </div>
 
             <div class="vacancy-banner row" v-if="data.banner">
-                <img :src="data.banner" alt="banner" class="vacancy-banner-preview" />
+                <img :src="data.banner" alt="banner" class="vacancy-banner-preview"/>
             </div>
 
         </div>
@@ -62,6 +62,11 @@
         },
         async fetch() {
             this.data = this.vacancy
+        },
+        methods: {
+            redirect(id) {
+                this.$router.push({name: "vacancies-id", params: {id: id}})
+            }
         }
     }
 </script>

@@ -1,13 +1,13 @@
 <template>
     <div>
         <widgets-search :params="params"></widgets-search>
-        <div class="row content">
+        <div class="row content p-0">
             <div class="col-md-8 vacancies-list">
                 <div class="vacancies-empty" v-if="vacancies.length === 0">
                     <img src="/images/empty.png" width="50%"/>
                     <h5 class="vacancies-empty title">Список вакансий пуст.. Попробуйте изменить фильтр!</h5>
                 </div>
-                <widgets-vacancy-block v-else v-for="{_source: vacancy} in vacancies"
+                <widgets-vacancy-block v-else v-for="{_source: vacancy} in vacancies" :key="vacancy.id"
                                      :vacancy="vacancy"></widgets-vacancy-block>
                 <div class="row mt-3">
                     <widgets-pagination></widgets-pagination>
@@ -56,5 +56,7 @@
 </script>
 
 <style scoped>
-
+    .vacancies-list {
+        padding: 0!important;
+    }
 </style>
