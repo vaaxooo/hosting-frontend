@@ -14,7 +14,7 @@
             <div class="col-md-7">
                         <span class="vacancy-city">
                             <span class="material-icons icon">access_time_filled</span>
-                            <b>{{ data.dateTxt }}</b>
+                            <b>{{ moment(data.date).fromNow() }}</b>
                         </span>
             </div>
         </div>
@@ -52,12 +52,16 @@
 </template>
 
 <script>
+    import moment from 'moment';
+    import 'moment/locale/ru';
+
     export default {
         name: "VacancyBlock",
         props: ['vacancy'],
         data() {
             return {
-                data: []
+                data: [],
+                moment: moment
             }
         },
         async fetch() {

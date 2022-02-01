@@ -13,10 +13,6 @@
 </template>
 
 <script>
-    import '~/static/assets/css/css.css';
-    import '~/static/assets/css/icon.css';
-    import '~/static/assets/css/theme.css';
-
     export default {
         name: "default"
     }
