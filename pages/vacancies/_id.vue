@@ -6,7 +6,7 @@
                     <img :src="vacancy.designBannerFullUrl" class="banner-preview"/>
                 </div>
                 <div class="date-publication">
-                    Опубликовано {{ vacancy.dateTxt }} - {{vacancy.date}}
+                    Опубликовано {{ moment(vacancy.date).fromNow() }}
                 </div>
                 <div class="vacancy-title mt-3">
                     {{ vacancy.name }}
@@ -90,6 +90,9 @@
 </template>
 
 <script>
+    import moment from 'moment';
+    import 'moment/locale/ru';
+
     export default {
         name: "vacancy",
         layout: "default",
@@ -97,7 +100,8 @@
         data() {
             return {
                 vacancy: [],
-                recommendedVacancies: []
+                recommendedVacancies: [],
+                moment: moment
             }
         },
         async fetch() {

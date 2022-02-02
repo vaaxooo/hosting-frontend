@@ -1,7 +1,7 @@
 <template>
     <div>
         <widgets-search :params="params"></widgets-search>
-        <div class="row content p-0">
+        <div class="row content p-0 mt-5">
             <div class="col-md-8 vacancies-list">
                 <div class="vacancies-empty" v-if="vacancies.length === 0">
                     <img src="/assets/landing/images/empty.png" width="50%"/>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="header">
+        <div class="header border-bottom">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <a class="logo" href="/">WorkBoard</a>
@@ -21,7 +21,7 @@
                         <div class="d-flex">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="/jobseeker/login">
+                                    <a class="btn btn-blue btn-lg" aria-current="page" href="/cabinet/auth/login">
                                         Войти
                                     </a>
                                 </li>

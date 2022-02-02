@@ -1,0 +1,37 @@
+.country-selector__input {
+    padding: 1rem 0.75rem!important;
+    height: calc(3.5rem + 2px)!important;
+    line-height: 1.25!important;
+    text-align: center;
+    margin: auto;
+    font-size: 16px!important;
+}
+
+.country-selector.input-country-selector.has-value {
+    height: calc(3.5rem + 2px)!important;
+    line-height: 1.25!important;
+}
+
+.select-country-container {
+    height: calc(3.5rem + 2px)!important;
+    line-height: 1.25!important;
+}
+
+.input-tel__input {
+    height: calc(3.5rem + 2px)!important;
+    line-height: 1.25!important;
+}
+
+.iti-flag-small.iti-flag {
+    margin-top: 3px!important;
+    margin-left: 5px!important;
+}
+
+label.country-selector__label {
+    display: none;
+}
+
+.input-tel .input-phone-number {
+    height: calc(3.5rem + 2px)!important;
+    line-height: 1.25!important;
+}
