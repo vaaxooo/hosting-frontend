@@ -432,7 +432,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .modal-body {
-    padding: 45px 45px 30px 45px!important;
+    padding: 45px 45px 30px 45px !important;
     word-break: break-word;
 }
 
@@ -487,7 +487,7 @@ a.link:hover {
 }
 
 .border-bottom {
-    border-bottom: 1px solid #e9ecef!important;
+    border-bottom: 1px solid #e9ecef !important;
 }
 
 [type=radio] {
@@ -521,4 +521,44 @@ form.auth-block {
     color: #ffffff;
     background-color: #ed63709e;
     border-color: #ed63709e;
+}
+
+.header-email {
+    margin-right: 20px;
+    line-height: 1.2;
+    display: block;
+    text-align: right;
+    font-size: 18px;
+    color: #797e84;
+}
+
+.header-balance {
+    margin-right: 20px;
+    line-height: 1.2;
+    display: block;
+    text-align: right;
+    font-size: 18px;
+    color: #797e84;
+}
+
+.header-user {
+    cursor: pointer;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.header-user:hover {
+    opacity: 1 !important;
+}
+
+a.btn-logout {
+    color: #adb5bd;
+    margin: auto;
+    margin-left: 24px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+a.btn-logout:hover {
+    color: #797e84;
 }

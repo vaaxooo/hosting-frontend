@@ -1,44 +1,33 @@
 <template>
-    <div class="col-xl-5 col-lg-6 col-md-7 block">
-        <h1 class="h2"><b>Project</b></h1>
-        <p class="lead">Восстановление пароля</p>
-        <div class="form-group" v-if="message">
-            <span class="alert alert-danger">{{ message }}</span>
-        </div>
-        <form @submit.prevent="update">
-            <div class="form-group">
-                <div class="js-fields-area">
-                    <div class="input" :class="{'is-invalid': errors.password}">
-                        <label>
-                            <input type="password" v-model="password"/>
-                            <span>Пароль</span>
-                        </label>
-                    </div>
-                </div>
-                <small class="text-danger" v-if="errors.password">{{ errors.password[0] }}</small>
+    <main class="form-signin">
+        <form class="auth-block" @submit.prevent="update">
+            <h1 class="h3 mb-5 fw-normal">Восстановление пароля</h1>
+            <div class="form-group" v-show="message">
+                <span class="alert alert-danger">{{ message }}</span>
             </div>
-            <div class="form-group">
-                <div class="js-fields-area">
-                    <div class="input" :class="{'is-invalid': errors.repeat_password}">
-                        <label>
-                            <input type="password" v-model="repeat_password"/>
-                            <span>Повторите пароль</span>
-                        </label>
-                    </div>
-                </div>
-                <small class="text-danger" v-if="errors.repeat_password">{{ errors.repeat_password[0] }}</small>
+
+            <div class="form-floating auth-input">
+                <input type="password" class="form-control input" v-model="password" placeholder="Password" :class="{'is-invalid': errors.password}">
+                <label>Придумайте пароль</label>
+                <span class="text-danger" v-if="errors.password">{{ errors.password[0] }}</span>
             </div>
-            <button class="btn btn-lg btn-block btn-primary" role="button" type="submit" :class="{'loading': loading}">
-                Изменить пароль
-            </button>
+
+            <div class="form-floating auth-input">
+                <input type="password" class="form-control input" v-model="repeat_password" placeholder="Password" :class="{'is-invalid': errors.repeat_password}">
+                <label>Повторите пароль</label>
+                <span class="text-danger" v-if="errors.repeat_password">{{ errors.repeat_password[0] }}</span>
+            </div>
+
+            <div class="form-group">
+                <button class="w-100 btn btn-lg btn-blue" type="submit" :class="{'loading': loading}">Изменить пароль</button>
+            </div>
         </form>
-    </div>
+    </main>
 </template>
 
 <script>
     export default {
         name: "check",
-        layout: "account/auth",
         auth: 'guest',
         data() {
             return {
@@ -112,7 +101,7 @@
                     }
                     return false;
                 }
-                this.$router.go('/');
+                this.$router.push({path: '/'});
             }
         }
     }

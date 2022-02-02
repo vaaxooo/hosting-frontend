@@ -4,7 +4,7 @@ export default {
 
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        title: 'Project',
+        title: 'WorkBoard',
         htmlAttrs: {
             lang: 'en'
         },
@@ -57,10 +57,10 @@ export default {
 
     auth: {
         redirect: {
-            login: '/auth/login',
+            login: '/account/auth/login',
             home: '/',
-            logout: '/auth/login',
-            callback: '/auth/login'
+            logout: '/account/auth/login',
+            callback: '/account/auth/login'
         },
         localStorage: false,
         strategies: {

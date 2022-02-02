@@ -14271,3 +14271,10 @@ input {
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
+
+.header-email {
+    margin-right: 30px;
+    line-height: 1;
+    display: block;
+    text-align: center;
+}

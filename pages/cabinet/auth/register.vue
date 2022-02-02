@@ -115,7 +115,7 @@
                 }
                 await this.$auth.setUserToken(response.data.user.token);
                 await this.$auth.setUser(response.data.user);
-                this.$router.go('/');
+                this.$router.push({path: '/'});
             }
         }
     }
