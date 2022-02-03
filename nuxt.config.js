@@ -81,7 +81,9 @@ export default {
                     user: { url: '/account/me', method: 'get' }
                 }
             }
-        }
+        },
+        preserveState: true,
+        watchLoggedIn: true
     },
 
     router: {

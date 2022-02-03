@@ -1,5 +1,6 @@
 <template>
-    <div class="vacancy-block" @click="redirect(+data.id)">
+    <NuxtLink :to="{name: 'vacancies-id', params: { id: +data.id}}" class="vacancy">
+    <div class="vacancy-block">
         <div class="vacancy-title">
             {{ data.name }}
             <span class="material-icons hot-icon text-danger" title="Гарячая вакансия" v-if="data.hot">local_fire_department</span>
@@ -49,6 +50,7 @@
 
         </div>
     </div>
+    </NuxtLink>
 </template>
 
 <script>
@@ -76,5 +78,23 @@
 </script>
 
 <style scoped>
+    .vacancy-block:first-child {
+        border-radius: 0px;
+        padding: 40px;
+        border: 1px solid #e9ecef;
+    }
 
+    .vacancy-block {
+        border-radius: 0px;
+        padding: 40px;
+        border: 1px solid #e9ecef;
+        border-top: 0;
+    }
+
+    .vacancy-block:hover {
+        background: #f8f9fa;
+        border: 1px solid #abb2ba;
+        cursor: pointer;
+        z-index: 11;
+    }
 </style>

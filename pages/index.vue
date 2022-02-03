@@ -13,7 +13,7 @@
                     <widgets-pagination :params="params"></widgets-pagination>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 bg-default">
                 <widgets-filters :params="params"></widgets-filters>
             </div>
         </div>
@@ -24,7 +24,7 @@
     export default {
         name: "index",
         layout: "default",
-        auth: 'guest',
+        auth: false,
         data() {
             return {
                 vacancies: [],

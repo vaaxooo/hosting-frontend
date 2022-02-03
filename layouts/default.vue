@@ -21,17 +21,17 @@
                         </ul>
                         <div class="d-flex">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item" v-show="!this.$auth.user">
+                                <li class="nav-item" v-show="!isAuthenticated">
                                     <a class="btn btn-blue btn-lg" aria-current="page" href="/cabinet/auth/login">
                                         Войти
                                     </a>
                                 </li>
 
-                                <li class="nav-item d-flex" v-if="this.$auth.user">
+                                <li class="nav-item d-flex" v-if="isAuthenticated">
                                     <a href="/" class="d-flex header-user">
                                         <div class="d-block m-1">
-                                            <span class="header-email">{{ this.$auth.user.email }}</span>
-                                            <span class="header-balance">Баланс {{ this.$auth.user.balance }} грн</span>
+                                            <span class="header-email">{{ loggedInUser.email }}</span>
+                                            <span class="header-balance">Баланс {{ loggedInUser.balance }} грн</span>
                                         </div>
                                         <img
                                             src="https://agile.yakubovsky.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png"
@@ -55,12 +55,15 @@
 </template>
 
 <script>
+    import { mapGetters } from 'vuex'
     import '~/static/assets/landing/css/template.css'
     import '~/static/assets/landing/css/work.css'
 
     export default {
         name: "default",
-
+        computed: {
+            ...mapGetters(['isAuthenticated', 'loggedInUser'])
+        },
         methods: {
             async logout() {
                 await this.$auth.logout();

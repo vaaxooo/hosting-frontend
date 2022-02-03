@@ -1,5 +1,5 @@
 <template>
-    <div class="block-filter content">
+    <div class="block-filter content bg-default">
         <div class="form-group filter-type">
             <label class="filter-title">Рубрики</label>
             <input type="search" list="rubricsList" class="form-select form-select-lg input-rubrics" placeholder="Выберите рубрику" v-model="rubric" @change="changeFilterParams('rubric', rubric)">

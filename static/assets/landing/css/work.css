@@ -562,3 +562,8 @@ a.btn-logout {
 a.btn-logout:hover {
     color: #797e84;
 }
+
+a.vacancy {
+    color: #333a4d;
+    text-decoration: none;
+}

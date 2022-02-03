@@ -10,6 +10,8 @@
                 </div>
                 <div class="vacancy-title mt-3">
                     {{ vacancy.name }}
+                    <span class="material-icons hot-icon text-danger" title="Гарячая вакансия"
+                          v-if="vacancy.hot">local_fire_department</span>
                 </div>
                 <div class="vacancyinfo-subtitle">
                     <div class="row">
@@ -96,7 +98,7 @@
     export default {
         name: "vacancy",
         layout: "default",
-        auth: 'guest',
+        auth: false,
         data() {
             return {
                 vacancy: [],
